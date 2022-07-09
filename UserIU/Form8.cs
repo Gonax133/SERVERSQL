@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace UserIU
 {
-    public partial class Form5 : Form
+    public partial class Form8 : Form
     {
-        public Form5()
+        public Form8()
         {
             InitializeComponent();
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

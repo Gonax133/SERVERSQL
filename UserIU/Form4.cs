@@ -25,7 +25,7 @@ namespace UserIU
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 f3 = new Form3();
+            Form7 f3 = new Form7();
             f3.Show();
         }
 

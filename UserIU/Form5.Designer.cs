@@ -277,20 +277,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Indigo;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(323, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(341, 15);
+            this.label2.Size = new System.Drawing.Size(471, 21);
             this.label2.TabIndex = 37;
-            this.label2.Text = "Message: This is where Authors can find their reviews on papers";
+            this.label2.Text = "Message: This is where Admins can find their reviews on papers";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Indigo;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(323, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 15);
+            this.label1.Size = new System.Drawing.Size(245, 21);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Review Table";
+            this.label1.Text = "Review Report for administrator";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -354,7 +361,7 @@
             this.toolStripComboBox1});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(1240, 33);
+            this.menuStrip3.Size = new System.Drawing.Size(1239, 33);
             this.menuStrip3.TabIndex = 50;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -409,14 +416,14 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 23);
             this.button2.TabIndex = 51;
-            this.button2.Text = "Authors page";
+            this.button2.Text = "Admin page";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1240, 506);
+            this.ClientSize = new System.Drawing.Size(1239, 506);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.menuStrip3);
             this.Controls.Add(this.linkLabel2);
