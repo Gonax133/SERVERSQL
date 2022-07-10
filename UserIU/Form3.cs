@@ -13,6 +13,7 @@ namespace UserIU
 {
     public partial class Form3 : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P3BPN85;Initial Catalog=CPMS;Integrated Security=True");
         public Form3()
         {
             InitializeComponent();
@@ -27,23 +28,42 @@ namespace UserIU
 
         private void button1_Click(object sender, EventArgs e) //submit button
         {
-            string cs = @"Data Source = LAPTOP - U96TGVD3; Integrated Security = True";
-            SqlConnection conn = new SqlConnection(cs);
+            string pass = textBox12.Text;
+            string pass2 = textBox13.Text;
+            if (String.Equals(pass,pass2))
+            {
 
-            try
-            {
-                conn.Open();
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Author (FirstName,MiddleInitial,LastName," +
+                        "Affiliation,Department,Address,City,State,ZipCode,PhoneNumber,EmailAddress," +
+                        "Password)values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox8.Text + "','" + textBox10.Text + "','" + comboBox1.Text + "','" + textBox11.Text + "','" + textBox7.Text + "','" + textBox4.Text + "','" + textBox13.Text + "')", con);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Insertion completed");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                con.Close();
+                this.Hide();
+                Form9 f4 = new Form9();
+                f4.Show();
             }
-            catch (Exception ex)
+            else
             {
-                label1.Text = "Error in connecting to database." + ex.Message;
-                conn.Close();
+                MessageBox.Show("Password dont match");
             }
+             
         }
 
         private void button2_Click(object sender, EventArgs e) //cancel button
         {
-
+            this.Hide();
+            Form4 f4 = new Form4();
+            f4.Show();
         }
 
         //label methods
