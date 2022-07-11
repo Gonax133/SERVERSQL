@@ -183,15 +183,17 @@
             this.button1.TabIndex = 60;
             this.button1.Text = "Admin page";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(993, 65);
+            this.button4.Location = new System.Drawing.Point(959, 65);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 23);
             this.button4.TabIndex = 59;
             this.button4.Text = "Log out";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 

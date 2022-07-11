@@ -53,5 +53,19 @@ namespace UserIU
 
             con.Close();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f7 = new Form2();
+            f7.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 f7 = new Form4();
+            f7.Show();
+        }
     }
 }

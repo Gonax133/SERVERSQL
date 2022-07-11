@@ -163,6 +163,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(1243, 100);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
@@ -257,6 +258,7 @@
             this.button4.TabIndex = 56;
             this.button4.Text = "Signup Reviewer";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form4
             // 

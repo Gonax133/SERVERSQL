@@ -372,11 +372,21 @@ namespace UserIU
                 MessageBox.Show(ex.Message);
             }
             con.Close();
+            this.Hide();
+            Form12 f7 = new Form12();
+            f7.Show();
         }
 
         private void Form6_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form12 f7 = new Form12();
+            f7.Show();
         }
     }
 }

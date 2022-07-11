@@ -248,7 +248,11 @@ namespace UserIU
                 MessageBox.Show(ex.Message);
             }
             con.Close();
-            
+
+            this.Hide();
+            Form9 f2 = new Form9();
+            f2.Show();
+
         }
     }
 }

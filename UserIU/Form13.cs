@@ -10,39 +10,25 @@ using System.Windows.Forms;
 
 namespace UserIU
 {
-    public partial class Form9 : Form
+    public partial class Form13 : Form
     {
-        public Form9()
+        public Form13()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form8 f2 = new Form8();
-            f2.Show();
-           
+            Form12 f7 = new Form12();
+            f7.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form4 f2 = new Form4();
-            f2.Show();
-            MessageBox.Show("Logout Succesfull");
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form10 f2 = new Form10();
-            f2.Show();
+            Form12 f7 = new Form12();
+            f7.Show();
         }
     }
 }

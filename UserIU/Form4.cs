@@ -55,5 +55,17 @@ namespace UserIU
             Form3 f7 = new Form3();
             f7.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form11 f7 = new Form11();
+            f7.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
