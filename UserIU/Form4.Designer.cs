@@ -203,16 +203,19 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Orchid;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(753, 209);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 24);
+            this.button3.Size = new System.Drawing.Size(108, 29);
             this.button3.TabIndex = 50;
             this.button3.Text = "Browse";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(327, 209);
+            this.textBox1.Location = new System.Drawing.Point(327, 215);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(339, 23);
             this.textBox1.TabIndex = 51;

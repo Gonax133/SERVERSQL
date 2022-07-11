@@ -74,6 +74,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(1244, 34);
             this.pictureBox3.TabIndex = 48;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // textBox1
             // 
@@ -82,15 +83,19 @@
             this.textBox1.Size = new System.Drawing.Size(410, 23);
             this.textBox1.TabIndex = 51;
             this.textBox1.Text = "SELECT * FROM PAPER WHERE AuthorID = 11111";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Orchid;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(12, 136);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 31);
             this.button2.TabIndex = 52;
             this.button2.Text = "Query";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // linkLabel3
@@ -103,6 +108,7 @@
             this.linkLabel3.TabIndex = 53;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = resources.GetString("linkLabel3.Text");
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // menuStrip1
             // 
@@ -119,6 +125,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1242, 33);
             this.menuStrip1.TabIndex = 54;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // toolStripComboBox6
             // 
@@ -167,32 +174,41 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(812, 65);
+            this.button3.BackColor = System.Drawing.Color.Orchid;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(743, 65);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 23);
+            this.button3.Size = new System.Drawing.Size(145, 34);
             this.button3.TabIndex = 61;
             this.button3.Text = "Generate Report";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1106, 65);
+            this.button1.BackColor = System.Drawing.Color.Orchid;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1054, 63);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 23);
+            this.button1.Size = new System.Drawing.Size(107, 38);
             this.button1.TabIndex = 60;
             this.button1.Text = "Admin page";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(959, 65);
+            this.button4.BackColor = System.Drawing.Color.Orchid;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(919, 65);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 23);
+            this.button4.Size = new System.Drawing.Size(107, 34);
             this.button4.TabIndex = 59;
             this.button4.Text = "Log out";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
@@ -206,6 +222,7 @@
             this.label2.Size = new System.Drawing.Size(351, 21);
             this.label2.TabIndex = 58;
             this.label2.Text = "Message: This is where Admins can find papers";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -218,6 +235,7 @@
             this.label1.Size = new System.Drawing.Size(235, 21);
             this.label1.TabIndex = 57;
             this.label1.Text = "Paper Report for administrator";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pictureBox2
             // 
@@ -228,6 +246,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 56;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -248,13 +267,14 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(1218, 337);
             this.dataGridView1.TabIndex = 62;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1242, 553);
+            this.ClientSize = new System.Drawing.Size(1242, 562);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);

@@ -10,29 +10,18 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace UserIU
 {
-    public partial class Form5 : Form
+    public partial class Form15 : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P3BPN85;Initial Catalog=CPMS;Integrated Security=True");
-        public Form5()
+        public Form15()
         {
             InitializeComponent();
         }
-        SqlDataAdapter sda;
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        SqlDataAdapter sda
         private void button3_Click(object sender, EventArgs e)
         {
-            
             con.Open();
-            sda = new SqlDataAdapter(@"SELECT * FROM[Review]",con);
+            sda = new SqlDataAdapter(@"SELECT * FROM[Author]", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             BindingSource bSource = new BindingSource();
@@ -43,25 +32,18 @@ namespace UserIU
             con.Close();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form4 f4 = new Form4();
             f4.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form2 f4 = new Form2();
             f4.Show();
-        }
-
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

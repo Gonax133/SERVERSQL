@@ -16,5 +16,19 @@ namespace UserIU
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form9 f7 = new Form9();
+            f7.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form9 f7 = new Form9();
+            f7.Show();
+        }
     }
 }

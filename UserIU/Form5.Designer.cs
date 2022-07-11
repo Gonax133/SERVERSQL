@@ -93,7 +93,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.ForestGreen;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1243, 100);
             this.pictureBox1.TabIndex = 34;
@@ -111,12 +111,15 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(973, 65);
+            this.button1.BackColor = System.Drawing.Color.Orchid;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(964, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 23);
+            this.button1.Size = new System.Drawing.Size(107, 38);
             this.button1.TabIndex = 40;
             this.button1.Text = "Log out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel2
@@ -193,32 +196,41 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1108, 65);
+            this.button2.BackColor = System.Drawing.Color.Orchid;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1105, 50);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 23);
+            this.button2.Size = new System.Drawing.Size(107, 38);
             this.button2.TabIndex = 51;
             this.button2.Text = "Admin page";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(814, 65);
+            this.button3.BackColor = System.Drawing.Color.Orchid;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(831, 50);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 23);
+            this.button3.Size = new System.Drawing.Size(107, 38);
             this.button3.TabIndex = 52;
             this.button3.Text = "Generate Report";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Orchid;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(5, 133);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 31);
             this.button4.TabIndex = 54;
             this.button4.Text = "Query";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -226,7 +238,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(410, 23);
             this.textBox1.TabIndex = 53;
-            this.textBox1.Text = "SELECT * FROM PAPER WHERE AuthorID = 11111";
+            this.textBox1.Text = "SELECT * FROM REVIEW WHERE ReviewID = 11111";
             // 
             // dataGridView1
             // 
