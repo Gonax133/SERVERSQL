@@ -25,7 +25,23 @@ namespace UserIU
             Form4 f2 = new Form4();
             f2.Show();
         }
+        private bool String_verify(string str)
+        {
+            foreach (char MMM in str)
+            {
+                if ((MMM >= 'a' && MMM <= 'z') || (MMM >= 'A' && MMM <= 'Z'))
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("SQL injection is not permitted");
+                    Close();
+                }
+            }
 
+            return false;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             int x = 0;
@@ -68,7 +84,20 @@ namespace UserIU
             int hh = 0;
 
 
-
+            String_verify(textBox1.Text);
+            String_verify(textBox2.Text);
+            String_verify(textBox3.Text);
+            String_verify(textBox5.Text);
+            String_verify(textBox6.Text);
+            String_verify(textBox8.Text);
+            String_verify(textBox10.Text);
+            String_verify(textBox8.Text);
+            String_verify(comboBox1.Text);
+            String_verify(textBox11.Text);
+            String_verify(textBox7.Text);
+            String_verify(textBox4.Text);
+            String_verify(textBox13.Text);
+            String_verify(textBox20.Text);
 
             if (checkBox1.Checked == true)
             {

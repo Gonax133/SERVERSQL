@@ -35,9 +35,27 @@ namespace UserIU
         {
             
         }
+        private bool String_verify(string str)
+        {
+            foreach (char MMM in str)
+            {
+                if ((MMM >= 'a' && MMM <= 'z') || (MMM >= 'A' && MMM <= 'Z'))
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("SQL injection is not permitted");
+                    Close();
+                }
+            }
 
+            return false;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
+            String_verify(textBox2.Text);
+            String_verify(textBox3.Text);
             con.Open();
             sda = new SqlDataAdapter(@"SELECT * FROM Reviewer INNER JOIN Paper ON (Paper.AnalysisOfAlgorithms = Reviewer.AnalysisOfAlgorithms OR Paper.Applications = Reviewer.Applications OR Paper.Architecture = Reviewer.Architecture OR Paper.ArtificialIntelligence = Reviewer.ArtificialIntelligence OR Paper.ComputerEngineering = Reviewer.ComputerEngineering OR Paper.Curriculum = Reviewer.Curriculum OR Paper.DataStructures = Reviewer.DataStructures OR Paper.Databases = Reviewer.Databases OR Paper.DistanceLearning = Reviewer.DistancedLearning)  WHERE ReviewerID IN (SELECT ReviewerID FROM Reviewer WHERE( FirstName = '" + textBox2.Text + "' AND LastName = '" + textBox3.Text + "')) ", con);
             DataTable dt = new DataTable();

@@ -17,7 +17,7 @@ namespace UserIU
         {
             InitializeComponent();
         }
-        SqlDataAdapter sda
+        SqlDataAdapter sda;
         private void button3_Click(object sender, EventArgs e)
         {
             con.Open();

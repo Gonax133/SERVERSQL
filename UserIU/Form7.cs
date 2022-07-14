@@ -36,5 +36,13 @@ namespace UserIU
                 MessageBox.Show("Error: Please enter correct information");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 f2 = new Form4();
+            f2.Show();
+            MessageBox.Show("Login Succesfull");
+        }
     }
 }
